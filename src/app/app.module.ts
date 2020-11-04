@@ -9,7 +9,6 @@ import { LinkExpiriencesComponent } from './link-expiriences/link-expiriences.co
 import { LinkFAQsComponent } from './link-faqs/link-faqs.component';
 import { LinkBlogComponent } from './link-blog/link-blog.component';
 import { LinkContactUsComponent } from './link-contact-us/link-contact-us.component';
-import { LinkAllApartmentsComponent } from './link-all-apartments/link-all-apartments.component';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { HomeComponent } from './home/home.component';
     LinkFAQsComponent,
     LinkBlogComponent,
     LinkContactUsComponent,
-    LinkAllApartmentsComponent,
     HomeComponent
   ],
   imports: [
