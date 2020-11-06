@@ -1,10 +1,10 @@
 .content-wrapper {
     background: linear-gradient(rgba(63, 63, 63, 0.3), rgba(46, 46, 46, 0.5)), url('https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1592387120727-Q5NUNKW1IBIWKM73P78T/ke17ZwdGBToddI8pDm48kHH9S2ID7_bpupQnTdrPcoF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0nQwvinDXPV4EYh2MRzm-RRB5rUELEv7EY2n0AZOrEupxpSyqbqKSgmzcCPWV5WMiQ/Covent+Garden+015.jpg?format=1000w');
-    width: 1349px;
-    height: 679.88px;
+    width: 1350px;
+    height: 680px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 136.6px 40.98px;
+    padding: 135px 40px;
 }
 
 .sqs-block-content {
@@ -13,13 +13,13 @@
 
 .sqs-block-content h2 {
     color: #ffffff;
-    font: 45.5056px 'orpheus-pro';
+    font: 45px 'orpheus-pro';
     text-align: center;
     margin: 0px 0px 32px 0px;
 }
 
 .sqs-block-content ul {
-    margin: 19.2784px 0px 0px;
+    margin: 19px 0px 0px;
     padding: opx 0px 0px 40px;
     text-align: center;
     display: table;
@@ -29,8 +29,8 @@
 
 .sqs-block-content ul li {
     color: #ffffff;
-    font: 24.196px adobe-garamond-pro;
-    margin: 12.098px 0px;
+    font: 24px adobe-garamond-pro;
+    margin: 12px 0px;
 }
 
 .pWithMark::before {
