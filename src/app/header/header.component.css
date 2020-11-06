@@ -49,6 +49,6 @@
     }
 }
 
-li.active {
+.active {
     text-decoration: underline;
 }
