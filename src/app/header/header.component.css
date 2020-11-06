@@ -1,18 +1,18 @@
-.container-fluid {
-    background: rgb(219, 241, 121);
+.header {
+    background: #FFF;
     margin: 0;
     padding: 0;
-    padding: 15.72px 39.3px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
 }
 
 .header-logo img {
-    width: 259.13px;
-    height: 51.98px;
+    width: 260px;
+    height: 50px;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 990px) {
     .navbar .nav-item .dropdown-menu {
         display: none;
         border: 1px solid white;
@@ -35,14 +35,14 @@
         color: #000;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 500;
-        font-size: 19px;
+        font-size: 20px;
     }
     .nav-item .nav-link {
         padding: 0;
-        padding-left: 18px;
+        padding-left: 20px;
     }
     .dropdown-item {
-        padding: 4px 8px;
+        padding: 5px 10px;
     }
     .dropdown-item:hover {
         color: #808080;
