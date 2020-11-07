@@ -1,0 +1,21 @@
+.btn-bg-image {
+    padding: 17px;
+    text-align: center;
+}
+
+.btn-bg-image a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    border: 1px solod #ffffff;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 17px 26px;
+    font: 15px 'orpheus-pro';
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.btn-bg-image a:hover {
+    background-color: rgb(218, 214, 214);
+}
