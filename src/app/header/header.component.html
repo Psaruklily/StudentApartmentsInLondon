@@ -10,10 +10,10 @@
         <div class="header-nav collapse navbar-collapse" id="main_nav">
 
             <ul class="navbar-nav">
-                <li class="nav-item dropdown active">
-                    <a class="nav-link" href="#" data-toggle="dropdown">  Luxe Apartments  </a>
+                <li class="nav-item dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a class="nav-link" routerLink="" data-toggle="dropdown">  Luxe Apartments  </a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a class="dropdown-item" href="#"> All Apartments </a></li>
+                        <li><a routerLink="" class="dropdown-item"> All Apartments </a></li>
                         <li><a class="dropdown-item" href="#"> -Rings Mews, NEW! </a></li>
                         <li><a class="dropdown-item" href="#"> -Covent Garden </a></li>
                         <li><a class="dropdown-item" href="#"> -Soho </a></li>
@@ -21,19 +21,19 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" data-toggle="dropdown">  Universities  </a>
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <a routerLink="/universities" class="nav-link" data-toggle="dropdown">  Universities  </a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a class="dropdown-item" href="#"> Overview </a></li>
+                        <li><a routerLink="/universities" class="dropdown-item"> Overview </a></li>
                         <li><a class="dropdown-item" href="#"> -Kings College London </a></li>
                         <li><a class="dropdown-item" href="#"> -LSE (London School of<br>Economics) </a></li>
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Expiriences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/expiriences" class="nav-link" href="#">Expiriences</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/faqs" class="nav-link" href="#">FAQs</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/blog" class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/contactUs" class="nav-link" href="#">Contact Us</a></li>
             </ul>
 
         </div>
