@@ -62,9 +62,10 @@
     padding: 17px;
     height: 55px;
     width: 668px;
+    margin: 0 auto;
 }
 
-.trendiest-apartments hr {
+.line-trendiest-apartments hr {
     border: none;
     height: 1px;
     color: #949494;
