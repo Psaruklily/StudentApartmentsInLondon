@@ -37,3 +37,37 @@
     content: '\2022';
     padding: 0px 10px 0px 0px;
 }
+
+
+/*CSS for wrapper-trendiest-appartments div and children div*/
+
+.wrapper-trendiest-appartments {
+    padding: 41px 41px 0px;
+}
+
+.trendiest-apartments {
+    padding: 17px;
+    text-align: center;
+    display: inline-block;
+    display: table;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.trendiest-apartments h3 {
+    font: 36px 'orpheus-pro';
+}
+
+.line-trendiest-apartments {
+    padding: 17px;
+    height: 55px;
+    width: 668px;
+}
+
+.trendiest-apartments hr {
+    border: none;
+    height: 1px;
+    color: #949494;
+    background: #949494;
+    margin: 10px 0px;
+}
