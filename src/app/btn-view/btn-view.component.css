@@ -1,0 +1,21 @@
+.btn-view {
+    padding: 17px;
+    text-align: center;
+}
+
+.btn-view a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solod #34587F;
+    background: #34587F;
+    border-radius: 7px;
+    padding: 17px 26px;
+    font: 15px 'orpheus-pro';
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.btn-view a:hover {
+    background-color: rgba(52, 88, 127, 0.8);
+}
