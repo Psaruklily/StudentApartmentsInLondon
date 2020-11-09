@@ -11,6 +11,7 @@ import { LinkBlogComponent } from './link-blog/link-blog.component';
 import { LinkContactUsComponent } from './link-contact-us/link-contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { BtnBgImageComponent } from './btn-bg-image/btn-bg-image.component';
+import { BtnViewComponent } from './btn-view/btn-view.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BtnBgImageComponent } from './btn-bg-image/btn-bg-image.component';
     LinkBlogComponent,
     LinkContactUsComponent,
     HomeComponent,
-    BtnBgImageComponent
+    BtnBgImageComponent,
+    BtnViewComponent
   ],
   imports: [
     BrowserModule,
