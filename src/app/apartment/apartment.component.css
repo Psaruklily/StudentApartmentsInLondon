@@ -1,0 +1,55 @@
+.wrapper-apartments {
+    padding: 14px 41px;
+}
+
+.current-apartment {
+    width: 434px;
+}
+
+.name-apartment {
+    padding: 0px 17px 17px;
+    text-align: center;
+}
+
+.name-apartment p {
+    margin-bottom: 0px;
+    font: 20px 'adobe-garamond-pro';
+}
+
+.image-flat {
+    padding: 17px;
+}
+
+.image-flat img {
+    width: 400px;
+    height: 267px;
+}
+
+.info-about-flat {
+    text-align: center;
+    padding: 17px;
+}
+
+.street-bed {
+    margin: 0px 0px 32px;
+    font: 36px 'orpheus-pro';
+}
+
+.price {
+    margin: 32px 0px 0px;
+    font: 36px 'orpheus-pro';
+}
+
+.line {
+    width: 434px;
+    height: 54px;
+    padding: 17px;
+}
+
+.line hr {
+    margin: 10px 0px;
+    border: none;
+    height: 1px;
+    color: #949494;
+    background: #949494;
+}

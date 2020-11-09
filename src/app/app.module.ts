@@ -12,6 +12,7 @@ import { LinkContactUsComponent } from './link-contact-us/link-contact-us.compon
 import { HomeComponent } from './home/home.component';
 import { BtnBgImageComponent } from './btn-bg-image/btn-bg-image.component';
 import { BtnViewComponent } from './btn-view/btn-view.component';
+import { ApartmentComponent } from './apartment/apartment.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BtnViewComponent } from './btn-view/btn-view.component';
     LinkContactUsComponent,
     HomeComponent,
     BtnBgImageComponent,
-    BtnViewComponent
+    BtnViewComponent,
+    ApartmentComponent
   ],
   imports: [
     BrowserModule,
