@@ -1,20 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { ApartmentsService } from '../apartments.service';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-apartment',
   templateUrl: './apartment.component.html',
-  styleUrls: ['./apartment.component.css'],
-  providers: [ApartmentsService]
+  styleUrls: ['./apartment.component.css']
 })
 export class ApartmentComponent implements OnInit {
 
-  apartments: object[] = [];
+@Input() apartment: Object;
 
-  constructor(private apartmentsService: ApartmentsService) { }
+  constructor() { }
 
   ngOnInit(): void {
-   this.apartments = this.apartmentsService.getApartments();
   }
 
 }
