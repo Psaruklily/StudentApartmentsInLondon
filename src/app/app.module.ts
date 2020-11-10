@@ -11,10 +11,7 @@ import { LinkBlogComponent } from './link-blog/link-blog.component';
 import { LinkContactUsComponent } from './link-contact-us/link-contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { BtnBgImageComponent } from './btn-bg-image/btn-bg-image.component';
-<<<<<<< HEAD
 import { BtnViewComponent } from './btn-view/btn-view.component';
-=======
->>>>>>> 436a84d4de97c6b99b0b82a89ce1322f672476b8
 import { ApartmentComponent } from './apartment/apartment.component';
 
 @NgModule({
@@ -28,10 +25,7 @@ import { ApartmentComponent } from './apartment/apartment.component';
     LinkContactUsComponent,
     HomeComponent,
     BtnBgImageComponent,
-<<<<<<< HEAD
     BtnViewComponent,
-=======
->>>>>>> 436a84d4de97c6b99b0b82a89ce1322f672476b8
     ApartmentComponent
   ],
   imports: [
