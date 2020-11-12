@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-apartment',
@@ -7,7 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ApartmentComponent implements OnInit {
 
-@Input() apartment: Object;
+@Input() apartment;
+
+@Output() currentApartment = new EventEmitter();
+redirectToCurrentApartment(){
+  this.currentApartment.emit();
+}
 
   constructor() { }
 

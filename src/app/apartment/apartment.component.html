@@ -3,7 +3,7 @@
         <p> <strong>{{ apartment.nameApartment }}</strong> | London</p>
     </div>
     <div class="image-flat">
-        <a href="#">
+        <a (click)="redirectToCurrentApartment()">
             <img src="{{ apartment.image }}" alt="flat">
         </a>
     </div>
