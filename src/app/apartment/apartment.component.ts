@@ -16,6 +16,11 @@ redirectToCurrentApartment(){
 
   constructor() { }
 
+  @Output() transfertoHome = new EventEmitter();
+  eventTransfer(){
+    this.transfertoHome.emit();
+  }
+
   ngOnInit(): void {
   }
 
