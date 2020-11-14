@@ -20,8 +20,8 @@ redirectToCurrentApartment(){
   constructor(private apartmentsService: ApartmentsService) { }
 
   @Output() transfertoHome = new EventEmitter();
-  eventTransfer(){
-    this.transfertoHome.emit();
+  eventTransfer($event){
+    this.transfertoHome.emit($event);
   }
 
   ngOnInit(): void {

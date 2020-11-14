@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-/* import { ApartmentsService } from '../apartments.service'; */
+ import { ApartmentsService } from '../apartments.service';
 
 @Component({
   selector: 'app-btn-view',
@@ -8,21 +8,25 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class BtnViewComponent implements OnInit {
 
-  @Input() apartment: Object;
+  @Input() apartment;
 
 
-  constructor() { }
+  constructor(private apartmentsService: ApartmentsService) { }
 
   /* apartments: object[] = []; */
 
 @Output() clickedBtn = new EventEmitter();
 
-onClick(){
-  this.clickedBtn.emit();
+onClick(id){
+  this.clickedBtn.emit(id);
+  //console.log(this.apartment)
+  /* this.id = this.apartmentsService.getApartmentById(this.apartment['id']);  */
+  localStorage.setItem('currentApartment',  JSON.stringify(this.apartment));
 }
 
   ngOnInit(): void {
-    /* this.id = this.apartmentsService.getApartmentById(3); */
+    
+     //console.log(this.id)
   }
 
 }

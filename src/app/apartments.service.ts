@@ -113,7 +113,8 @@ export class ApartmentsService {
 
   getApartmentById(id){
     return this.apartments.find(apartment => apartment['id'] === id);
-  }
+  }  
+
 
 
 

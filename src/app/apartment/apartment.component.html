@@ -11,7 +11,7 @@
         <h3 class="street-bed">{{ apartment.street }} | <strong>{{ apartment.bed }} Bed</strong></h3>
         <h3 class="price"> <strong>{{ apartment.price }}</strong> per week</h3>
     </div>
-    <app-btn-view (clickedBtn)="eventTransfer()" [apartment]="apartment"></app-btn-view>
+    <app-btn-view (clickedBtn)="eventTransfer($event)" [apartment]="apartment"></app-btn-view>
     <div class="line">
         <hr>
     </div>

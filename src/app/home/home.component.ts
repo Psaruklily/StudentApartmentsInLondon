@@ -15,8 +15,10 @@ export class HomeComponent implements OnInit {
   constructor(private apartmentsService: ApartmentsService,
     private router: Router) { }
 
-     goToApartment(){
+     goToApartment($event){
        this.router.navigate(['/currentApartment']);
+       //console.log($event);
+      //console.log( this.apartmentsService.getApartmentById($event))
     } 
 
   ngOnInit(): void {
