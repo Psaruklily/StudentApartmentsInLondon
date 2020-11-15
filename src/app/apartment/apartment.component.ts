@@ -4,10 +4,10 @@ import { ApartmentsService } from '../apartments.service';
 @Component({
   selector: 'app-apartment',
   templateUrl: './apartment.component.html',
-  styleUrls: ['./apartment.component.css']
+  styleUrls: ['./apartment.component.css'],
 })
 export class ApartmentComponent implements OnInit {
-
+  
 @Input() apartment;
 
 /* apartments: object[] = []; */

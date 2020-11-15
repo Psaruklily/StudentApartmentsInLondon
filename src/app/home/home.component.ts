@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [ApartmentsService]
 })
 export class HomeComponent implements OnInit {
 
