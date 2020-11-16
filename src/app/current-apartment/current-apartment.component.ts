@@ -14,11 +14,8 @@ export class CurrentApartmentComponent implements OnInit {
   constructor(private apartmentsService: ApartmentsService) { }
 
   ngOnInit(): void {
-  //  let apartment = localStorage.getItem('currentApartment');
-  /* let apartment = JSON.parse(localStorage.getItem('currentApartment'));
-    console.log(apartment)
-    console.log(typeof(apartment)) */
-      this.apartmentsService.currentMessage.subscribe(message => this.message = message) 
+      this.apartmentsService.currentMessage.subscribe(message => this.message = message);
+      console.log(this.apartmentsService.getApartmentById(this.message))
   }
 
 

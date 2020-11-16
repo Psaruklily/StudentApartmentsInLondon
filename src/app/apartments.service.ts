@@ -13,7 +13,6 @@ export class ApartmentsService {
 
   changeMessage(message: string) {
     this.messageSource.next(message)
-    console.log('sent')
   }
 
 
@@ -121,7 +120,7 @@ export class ApartmentsService {
     return this.apartments;
   }
 
-  getApartmentById(id){
+  getApartmentById(id:string){
     return this.apartments.find(apartment => apartment['id'] === id);
   }  
 
