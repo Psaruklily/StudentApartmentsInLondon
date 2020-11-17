@@ -35,7 +35,12 @@ export class ApartmentsService {
     image: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1575475426115-SDW4UR6BZNHFMWU6IEY8/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_010.jpg?format=500w',
     street: 'Floral Street',
     bed: 2,
-    price: '£1,185'
+    price: '£1,185',
+    slides: [
+      {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482289495-OSNZONGR5Z547V911MU7/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_016.jpg?format=1500w'},
+      {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482284285-DDMN2M77SPJN1CGNAGBW/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_011.jpg?format=1500w'},
+      {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482305218-6YH7PTFQKYN9UPEWXG0W/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_023.jpg?format=1500w'}
+    ]
 },
 {
   id: 3,
@@ -43,7 +48,12 @@ export class ApartmentsService {
   image: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1575475507030-1P9Q7WMZYT5OX9LZV2UD/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_002.jpg?format=500w',
   street: 'Drury Lane',
   bed: 1,
-  price: '£1,015'
+  price: '£1,015',
+  slides: [
+    {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482303941-EG2TB9X9BDPP4P8ABO35/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_019.jpg?format=1500w'},
+    {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482259354-6Y8UR7RU9NY8FAA4RVXD/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_008.jpg?format=1500w'},
+    {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482250893-H7YDSKJU450A9LBPK0A5/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_009.jpg?format=1500w'}
+  ]
 },
 {
   id: 4,
