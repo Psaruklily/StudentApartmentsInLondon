@@ -10,13 +10,21 @@ import { ApartmentsService } from '../apartments.service';
 export class CurrentApartmentComponent implements OnInit {
 
   message:string;
+  currentApartment: Object;
+  slides: Object[];
 
   constructor(private apartmentsService: ApartmentsService) { }
 
   ngOnInit(): void {
-      this.apartmentsService.currentMessage.subscribe(message => this.message = message);
-      console.log(this.apartmentsService.getApartmentById(this.message))
+    this.apartmentsService.currentMessage.subscribe(message => this.message = message);
+    this.currentApartment = this.apartmentsService.getApartmentById(this.message);
+    this.slides = this.currentApartment['slides'];
+    console.log(this.slides)
+      
   }
+
+
+  
 
 
 }

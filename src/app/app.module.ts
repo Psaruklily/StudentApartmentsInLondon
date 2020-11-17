@@ -14,6 +14,7 @@ import { BtnBgImageComponent } from './btn-bg-image/btn-bg-image.component';
 import { BtnViewComponent } from './btn-view/btn-view.component';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { CurrentApartmentComponent } from './current-apartment/current-apartment.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CurrentApartmentComponent } from './current-apartment/current-apartment
     BtnBgImageComponent,
     BtnViewComponent,
     ApartmentComponent,
-    CurrentApartmentComponent
+    CurrentApartmentComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

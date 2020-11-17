@@ -6,15 +6,14 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ApartmentsService {
 
-   messageSource = new BehaviorSubject<string>('default message');
-   currentMessage = this.messageSource.asObservable();
+  private messageSource = new BehaviorSubject<string>('default message');
+  public currentMessage = this.messageSource.asObservable();
 
   constructor() { }
 
   changeMessage(message: string) {
     this.messageSource.next(message)
   }
-
 
   apartments: Object[] = [
     {
@@ -23,7 +22,12 @@ export class ApartmentsService {
       image: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1575475366644-826KSCK2UK0CEA8TCN51/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_005.jpg?format=500w',
       street: 'Wardour St',
       bed: 2,
-      price: '£1,355'
+      price: '£1,355',
+      slides: [
+        {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482261675-E2BJJFI51W1FSDU9G5A7/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_004.jpg?format=1500w'},
+        {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1592386864950-2N782J2CI0K7VAIKSOJM/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Soho+005.jpg?format=1500w'},
+        {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1592386864946-FWX44M6CG8Z79ULY8DCU/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Soho+001.jpg?format=1500w'}
+      ]
   },
   {
     id: 2,
@@ -115,7 +119,6 @@ export class ApartmentsService {
 },
   ]
 
-
   getApartments(): object[] {
     return this.apartments;
   }
@@ -123,8 +126,5 @@ export class ApartmentsService {
   getApartmentById(id:string){
     return this.apartments.find(apartment => apartment['id'] === id);
   }  
-
-
-
 
 }
