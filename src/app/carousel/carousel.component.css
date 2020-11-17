@@ -1,4 +1,25 @@
 .container-fluid {
-    display: block;
-    height: 447px;
+    /*  width: 1349px; */
+    background: red;
 }
+
+.carousel {
+    height: 506px;
+    width: 1349px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.slide {
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-70%, -70%);
+}
+
+
+/*----------------*/
