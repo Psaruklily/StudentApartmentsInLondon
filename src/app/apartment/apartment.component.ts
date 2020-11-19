@@ -10,8 +10,6 @@ export class ApartmentComponent implements OnInit {
   
 @Input() apartment;
 
-/* apartments: object[] = []; */
-
 @Output() currentApartment = new EventEmitter();
 redirectToCurrentApartment(){
   this.currentApartment.emit();
@@ -25,8 +23,5 @@ redirectToCurrentApartment(){
   }
 
   ngOnInit(): void {
-  /*   this.apartments = this.apartmentsService.getApartments();
-    console.log(this.apartments) */
   }
-
 }

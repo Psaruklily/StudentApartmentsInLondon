@@ -16,12 +16,9 @@ export class HomeComponent implements OnInit {
 
      goToApartment($event){
        this.router.navigate(['/currentApartment']);
-       //console.log($event);
-      //console.log( this.apartmentsService.getApartmentById($event))
     } 
 
   ngOnInit(): void {
     this.apartments = this.apartmentsService.getApartments();
   }
-
 }

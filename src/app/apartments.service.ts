@@ -27,7 +27,16 @@ export class ApartmentsService {
         {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482261675-E2BJJFI51W1FSDU9G5A7/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_004.jpg?format=1500w'},
         {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1592386864950-2N782J2CI0K7VAIKSOJM/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Soho+005.jpg?format=1500w'},
         {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1592386864946-FWX44M6CG8Z79ULY8DCU/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Soho+001.jpg?format=1500w'}
-      ]
+      ],
+      shortDescriptionAfterStreet: 'Luxury 2 bed penthouse with outdoor terrace',
+      areaAndRooms: "2 bedroom, 2 bathroom | 109 square metres",
+      areaDescription: "Welcome to Soho. This Colourful neighbourhood is a churning amalgamation of buzzing nightlife, old-school pubs and cosy restaurants. Its streets and winding alleyways have had characters like Mozart, Karl Marx and the Sex Pistols call it home over the years.These days you’ll find Soho’s pavements busy with people going to West End shows, media professionals marching to work, hungry patrons sampling some of London’s best restaurants and people looking to have a legendary night out at one of the area’s great bars and pubs.",
+      kitchen: "The kitchen comes with everything you need to cook for yourself, including pots, pans, cutlery, glasses, etc. Its well-lit, modern, and houses a fridge freezer, plenty of cupboard storage space and a Nespresso machine (with new capsules each week!).",
+      livingArea: "A large place to relax and unwind that includes 2 sets of tables and chairs, and a sofa bed - so friends and family can visit. There is also a smart TV, high-speed internet and various laptop areas for studying.",
+      bedroomX2: "Designed for a perfect night's sleep, both bedrooms have double-beds that come with sheets, duvets, pillows. Enjoy 5 star hotel-standard cleanliness, weekly cleans, toiletries, fresh linen. There is also wardrobe space and a standing mirror in both.",
+      bathroomX2: "The modern bathrooms come with a sink, shower, toilet, heated towel rail, and multiple mirrors.",
+      outdoorTerrace: "Winding stairs in the hall lead up to 33.5 square metre room terrace, with outdoor furniture including tables and chairs.",
+      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away."
   },
   {
     id: 2,

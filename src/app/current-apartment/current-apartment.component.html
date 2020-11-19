@@ -1,4 +1,54 @@
-<!-- <h3>
-    Id: {{message}}
-</h3> -->
 <app-carousel [slides]="slides"></app-carousel>
+
+<div class="grid-container">
+    <div class="main">
+        <div class="block-contetnt">
+            <p class="price"><strong>{{currentApartment.price}} per week</strong></p>
+            <h3><strong>{{currentApartment.street}}</strong> | {{currentApartment.shortDescriptionAfterStreet}} </h3>
+            <h4>{{currentApartment.areaAndRooms}}</h4>
+        </div>
+
+        <div class="btn-WhatsApp">
+            <a href="#">Open WhatsApp Chat</a>
+        </div>
+
+        <div class="line-main">
+            <hr>
+        </div>
+
+        <div class="room-description">
+            <p><strong>Kitchen |</strong> {{currentApartment.kitchen}}</p>
+            <p><strong>Living area |</strong> {{currentApartment.livingArea}}</p>
+            <p><strong>Bedroom x 2 |</strong> {{currentApartment.bedroomX2}}</p>
+            <p><strong>Bathroom x 2 |</strong>{{currentApartment.bathroomX2}}</p>
+            <p><strong>Outdoor terrace |</strong>{{currentApartment.outdoorTerrace}}</p>
+            <p><strong>Total peace of mind |</strong>{{currentApartment.totalPeaceOfMind}}</p>
+        </div>
+    </div>
+
+    <div class="side">
+        <div class="greeting">
+            <p><strong>The Area</strong></p>
+            <p class="welcome1">Welcome to Soho. This Colourful neighbourhood is a churning amalgamation of buzzing nightlife, old-school pubs and cosy restaurants. Its streets and winding alleyways have had characters like Mozart, Karl Marx and the Sex Pistols call it home
+                over the years.</p>
+            <p class="welcom2">
+                These days you’ll find Soho’s pavements busy with people going to West End shows, media professionals marching to work, hungry patrons sampling some of London’s best restaurants and people looking to have a legendary night out at one of the area’s great
+                bars and pubs.
+            </p>
+        </div>
+
+        <div class="line-side">
+            <hr>
+        </div>
+
+        <div class="plus">
+            <b class="plus1">All bills included</b>
+            <b class="plus2">No UK guarantor required</b>
+            <b class="plus3">Flexible move-in dates & contract</b>
+            <b class="plus4">Fully equipped kitchen</b>
+            <b class="plus5">Close to LSE, Kings College</b>
+            <b class="plus5">24/7 Assistance & nearby Reception</b>
+            <b class="plus5">Weekly cleans & Nespresso refills</b>
+        </div>
+    </div>
+</div>

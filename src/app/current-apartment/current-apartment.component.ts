@@ -1,4 +1,3 @@
-/* import { ThrowStmt } from '@angular/compiler'; */
 import { Component, OnInit } from '@angular/core';
 import { ApartmentsService } from '../apartments.service';
 
@@ -10,7 +9,7 @@ import { ApartmentsService } from '../apartments.service';
 export class CurrentApartmentComponent implements OnInit {
 
   message:string;
-  currentApartment: Object;
+  currentApartment;
   slides: Object[];
 
   constructor(private apartmentsService: ApartmentsService) { }
@@ -18,14 +17,8 @@ export class CurrentApartmentComponent implements OnInit {
   ngOnInit(): void {
     this.apartmentsService.currentMessage.subscribe(message => this.message = message);
     this.currentApartment = this.apartmentsService.getApartmentById(this.message);
+    console.log( this.currentApartment);
     this.slides = this.currentApartment['slides'];
-    console.log(this.slides)
-      
   }
-
-
-  
-
-
 }
 
