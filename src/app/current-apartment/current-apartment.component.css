@@ -59,6 +59,21 @@
     font: 20px 'adobe-garamond-pro';
 }
 
+.further-question {
+    padding: 17px;
+    font: 19px 'adobe-garamond-pro';
+}
+
+.further-question strong {
+    text-decoration: underline;
+    color: #253551;
+}
+
+.further-question strong:hover {
+    cursor: pointer;
+    color: rgba(37, 53, 81, 0.5);
+}
+
 .side {
     font: 19px 'adobe-garamond-pro';
 }

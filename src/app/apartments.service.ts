@@ -49,7 +49,16 @@ export class ApartmentsService {
       {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482289495-OSNZONGR5Z547V911MU7/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_016.jpg?format=1500w'},
       {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482284285-DDMN2M77SPJN1CGNAGBW/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_011.jpg?format=1500w'},
       {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482305218-6YH7PTFQKYN9UPEWXG0W/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_023.jpg?format=1500w'}
-    ]
+    ],
+    shortDescriptionAfterStreet: "Beautiful chic 2-bed in the heart of Covent Garden",
+      areaAndRooms: "2 bedroom, 1 bathroom | 80 square metres",
+      areaDescription: "Welcome to Covent Garden - one of London’s trendiest neighbourhoods that attracts hordes of visitors year-round. Flanked by Leicester Square and Holborn, the area is home to top class restaurants, bars, museums, theatres and cultural experiences. With all the above (and much more) on offer in such a prime location in London, it’s no surprise that living in Covent Garden is highly sought after. It’s an exciting atmosphere to get in amongst, and is much calmer than neighbouring Soho or Leicester Square, which makes it ideal for studying, and brainstorming new ideas. ",
+      kitchen: "The kitchen comes with everything you need to cook for yourself, including pots, pans, cutlery, glasses, etc. It's well-lit, modern, and houses a fridge freezer, plenty of cupboard storage space and a Nespresso machine (with new capsules each week!).",
+      livingArea: "A place to relax that includes 2 tables, 7 chairs, a sofa bed - so friends and family can visit. There is also a smart TV, high-speed internet and various laptop areas for studying.",
+      bedroomX2: "Designed for a perfect night's sleep, both double-beds come with sheets, duvets, pillows, etc. Guests can enjoy 5 star hotel-standard cleanliness, weekly cleans, toiletries, fresh linen. There is also plenty of wardrobe space and a couple of standing mirrors.",
+      bathroomX2: "The modern bathroom comes with a sink, shower, toilet, heated towel rail, and multiple mirrors.",
+      outdoorTerrace: "Winding stairs in the hall lead up to 33.5 square metre room terrace, with outdoor furniture including tables and chairs.",
+      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away."
 },
 {
   id: 3,
@@ -62,7 +71,16 @@ export class ApartmentsService {
     {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482303941-EG2TB9X9BDPP4P8ABO35/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_019.jpg?format=1500w'},
     {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482259354-6Y8UR7RU9NY8FAA4RVXD/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_008.jpg?format=1500w'},
     {src: 'https://images.squarespace-cdn.com/content/v1/5de66dfc5511bf790e4476bd/1578482250893-H7YDSKJU450A9LBPK0A5/ke17ZwdGBToddI8pDm48kCpX2mwG9slVUzQCwhOMrQF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UVDXM9yQ8sG6x3COIEUaadqpk9XPubC0H4MH9Az_c7nPqIjSxZ2rgD2_Fw9U6DWfsg/image_009.jpg?format=1500w'}
-  ]
+  ],
+  shortDescriptionAfterStreet: "Stunning, luxury one-bed in Covent Garden with outdoor terrace",
+      areaAndRooms: "1 bedroom, 1 bathroom | 46 square metres.",
+      areaDescription: "Welcome to Covent Garden - one of London’s trendiest neighbourhoods that attracts hordes of visitors year-round. Flanked by Leicester Square and Holborn, the area is home to top class restaurants, bars, museums, theatres and cultural experiences. With all the above (and much more) on offer in such a prime location in London, it’s no surprise that living in Covent Garden is highly sought after. It’s an exciting atmosphere to get in amongst, and is much calmer than neighbouring Soho or Leicester Square, which makes it ideal for studying, and brainstorming new ideas. ",
+      kitchen: "The kitchen comes with everything you need to cook for yourself, including pots, pans, cutlery, glasses, etc. It's well-lit, modern, and houses a fridge freezer, plenty of cupboard storage space and a Nespresso machine (with new capsules each week!).",
+      livingArea: "Homely furnishings that includes 2 tables, 5 chairs, a stand alone lamp and sofa bed - the perfect environment for relaxing, and big enough to have friends and family come visit. There is also a smart TV, high-speed internet and various laptop areas for studying.",
+      bedroomX2: "Designed for a perfect night's sleep, the double-bed comes with sheets, duvets, pillows. Enjoy 5 star hotel-standard cleanliness, weekly cleans, toiletries, fresh linen. A further door here leads to the outdoor terrace area, perfect for morning and evening dining. Back inside, there is also wardrobe space and a mirror in the adjacent hall.",
+      bathroomX2: "The spotless modern bathroom comes with a sink, shower, toilet, heated towel rail, and multiple mirrors.",
+      outdoorTerrace: "Winding stairs in the hall lead up to 33.5 square metre room terrace, with outdoor furniture including tables and chairs.",
+      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away."
 },
 {
   id: 4,
