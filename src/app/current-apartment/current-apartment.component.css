@@ -1,0 +1,159 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 867px auto;
+    grid-column-gap: 75px;
+    padding: 41px 41px 90px;
+}
+
+.main {
+    padding: 0 17px 17px;
+}
+
+.block-contetnt {
+    padding: 0 17px 17px;
+}
+
+.block-contetnt .price {
+    font: 46px 'adobe-garamond-pro';
+    margin: 0;
+}
+
+.block-contetnt h3 {
+    margin: 32px 0;
+    font: 36px 'orpheus-pro';
+}
+
+.block-contetnt h4 {
+    margin: 32px 0 0;
+    font: 20px 'orpheus-pro';
+}
+
+.btn-WhatsApp {
+    background: #13b91c;
+    height: 61px;
+    width: 241px;
+    border-radius: 8px;
+    padding: 17px 29px;
+    margin: 17px;
+    text-align: center;
+}
+
+.btn-WhatsApp a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.line-main {
+    padding: 17px;
+    width: 850px;
+    height: 54px;
+}
+
+.room-description {
+    padding: 17px;
+}
+
+.room-description p {
+    font: 20px 'adobe-garamond-pro';
+}
+
+.further-question {
+    padding: 17px;
+    font: 19px 'adobe-garamond-pro';
+}
+
+.further-question strong {
+    text-decoration: underline;
+    color: #253551;
+}
+
+.further-question strong:hover {
+    cursor: pointer;
+    color: rgba(37, 53, 81, 0.5);
+}
+
+.side {
+    font: 19px 'adobe-garamond-pro';
+}
+
+.greeting {
+    padding: 0 17px 17px;
+}
+
+.welcome1 {
+    margin: 16px 0;
+}
+
+.line-side {
+    width: 100%;
+    padding: 17px;
+}
+
+.plus {
+    padding: 17px;
+}
+
+.plus b {
+    display: block;
+}
+
+.plus1,
+.plus2,
+.plus3,
+.plus4,
+.plus5,
+.plus6,
+.plus7 {
+    margin-bottom: 15px;
+}
+
+.plus1::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f154';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus2::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f505';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus3::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f4ce';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus4::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f2e7';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus5::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f19d';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus6::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f4c4';
+    font-weight: 800;
+    margin-right: 17px;
+}
+
+.plus7::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f517';
+    font-weight: 800;
+    margin-right: 17px;
+}

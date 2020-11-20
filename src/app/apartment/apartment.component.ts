@@ -1,17 +1,27 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ApartmentsService } from '../apartments.service';
 
 @Component({
   selector: 'app-apartment',
   templateUrl: './apartment.component.html',
-  styleUrls: ['./apartment.component.css']
+  styleUrls: ['./apartment.component.css'],
 })
 export class ApartmentComponent implements OnInit {
+  
+@Input() apartment;
 
-@Input() apartment: Object;
+@Output() currentApartment = new EventEmitter();
+redirectToCurrentApartment(){
+  this.currentApartment.emit();
+}
 
-  constructor() { }
+  constructor(private apartmentsService: ApartmentsService) { }
+
+  @Output() transfertoHome = new EventEmitter();
+  eventTransfer($event){
+    this.transfertoHome.emit($event);
+  }
 
   ngOnInit(): void {
   }
-
 }
