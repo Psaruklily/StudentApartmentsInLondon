@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="price-fill-form">
+        <h2>{{currentApartment.price}} per week</h2>
+        <h4> Fill out the form below to speak with us regarding availability. </h4>
+    </div>
+
+    <div class="wraper-form">
+        <div class="content-form">
+            <form [formGroup]="currentStudent" (ngSubmit)="submit()">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <div class="content-name">
+                        <span class="first-name">
+                      <input type="text">
+                      <label>First</label>
+                    </span>
+
+                        <span class="last-name">
+                      <input type="text">
+                      <label>Last</label>
+                    </span>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

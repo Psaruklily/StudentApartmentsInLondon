@@ -163,5 +163,4 @@ export class ApartmentsService {
   getApartmentById(id:string){
     return this.apartments.find(apartment => apartment['id'] === id);
   }  
-
 }

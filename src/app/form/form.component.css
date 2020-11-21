@@ -1,0 +1,71 @@
+.wrapper {
+    padding: 45px 40px;
+}
+
+.price-fill-form {
+    padding: 17px;
+    height: 151px;
+    text-align: center;
+}
+
+.price-fill-form h2 {
+    margin: 0 0 32px;
+    font: 45px 'orpheus-pro';
+    font-weight: bold;
+}
+
+.price-fill-form h4 {
+    margin: 32px 0 0;
+    font: 19px 'orpheus-pro';
+}
+
+.wraper-form {
+    padding: 17px;
+    width: 984px;
+    height: 680px;
+    background: rgb(236, 156, 156);
+    margin: 0 auto;
+}
+
+.form-group {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+span.first-name {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+span.last-name {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+.last-name input,
+.first-name input {
+    border-radius: 2px;
+    padding: 5px;
+    width: calc(100% - 5px);
+}
+
+.first-name input {
+    margin-right: 5px;
+}
+
+.last-name input,
+label {
+    margin-left: 5px;
+}
+
+.content-form {
+    width: 800px;
+    background: rgb(124, 230, 159);
+    margin: auto;
+}
