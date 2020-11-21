@@ -8,20 +8,54 @@
         <div class="content-form">
             <form [formGroup]="currentStudent" (ngSubmit)="submit()">
                 <div class="form-group">
-                    <label>Full Name</label>
+                    <label class="label">
+                      <span>Full Name</span>
+                      <em class="required-star">*</em>
+                    </label>
                     <div class="content-name">
                         <span class="first-name">
                       <input type="text">
-                      <label>First</label>
+                      <label class="form-sub-info-text">First</label>
                     </span>
-
                         <span class="last-name">
                       <input type="text">
-                      <label>Last</label>
+                      <label class="form-sub-info-text">Last</label>
                     </span>
                     </div>
-
                     <div class="clearfix"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">
+                    <span>Phone Number</span>
+                    <em class="required-star">*</em>
+                  </label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="label">
+                  <span>Email Address</span>
+                </label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="label">
+                <span>University / College of attendance</span>
+              </label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="label">
+              <span>Your Message</span>
+            </label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="form-group btn-submit">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
