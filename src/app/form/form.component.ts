@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+/* import { FormGroup } from '@angular/forms'; */
 
 @Component({
   selector: 'app-form',
@@ -9,10 +10,19 @@ import { FormGroup } from '@angular/forms';
 export class FormComponent implements OnInit {
 
 @Input() currentApartment;
+currentStudent: FormGroup;
 
-  constructor() { }
+  constructor() { 
+    this.currentStudent = new FormGroup({
+      "studentFirstName": new FormControl('Lilya', Validators.required)
+    })
+  }
 
   ngOnInit(): void {
+  }
+
+  submit(){
+    console.log(this.currentStudent);
   }
 
 }

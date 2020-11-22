@@ -44,6 +44,7 @@
     font: 14px 'Open Sans, Arial, Arimo, Helvetica, sans-serif';
     font-weight: bold;
     display: block;
+    margin: 0 0 8px 0;
 }
 
 .required-star {
@@ -69,6 +70,19 @@ textarea:focus {
     outline: none;
 }
 
+input.ng-touched.ng-invalid {
+    border: 1px solid rgba(223, 0, 0, 0.75);
+}
+
+input.ng-touched:focus.ng-invalid:focus {
+    box-shadow: 0 0 5px rgba(223, 0, 0, 0.75);
+    border: 1px solid rgba(223, 0, 0, 0.75);
+}
+
+input.ng-touched.ng-valid {
+    border: solid rgb(0, 128, 0) 1px;
+}
+
 .clearfix {
     clear: both;
 }
@@ -76,13 +90,13 @@ textarea:focus {
 span.first-name {
     float: left;
     display: inline-block;
-    width: 50%;
+    width: calc(50% - 5px);
 }
 
 span.last-name {
     float: left;
     display: inline-block;
-    width: 50%;
+    width: calc(50% - 5px);
 }
 
 .last-name input,
@@ -92,19 +106,19 @@ span.last-name {
     width: calc(100% - 5px);
 }
 
-.first-name input {
-    margin-right: 5px;
-}
-
-.last-name input,
-label {
-    margin-left: 5px;
-}
-
 .form-sub-info-text {
     color: #888888;
     font: 14px 'Open Sans, Arial, Arimo, Helvetica, sans-serif';
     padding-top: 3px;
+    margin: 0 0 8px;
+}
+
+.first-name {
+    margin-right: 5px;
+}
+
+.last-name {
+    margin-left: 5px;
 }
 
 textarea {
@@ -128,4 +142,10 @@ input[type=submit] {
     font: 15px 'Open Sans, Lucida Grande, Lucida Sans Unicode,Arial, Arimo, Helvetica,sans-serif';
     font-weight: 800;
     text-align: center;
+}
+
+.warning {
+    display: block;
+    color: #FF0000;
+    font: 14px 'Arial, Arimo, Helvetica, sans-serif';
 }
