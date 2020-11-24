@@ -18,12 +18,13 @@
                       <label class="form-sub-info-text">First</label>
                     </span>
                         <span class="last-name">
-                      <input type="text">
+                      <input type="text" class="form-control" name="last-name" formControlName="studentLastName">
                       <label class="form-sub-info-text">Last</label>
                     </span>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="warning" *ngIf="currentStudent.controls['studentFirstName'].invalid && currentStudent.controls['studentFirstName'].touched">
+                    <div class="warning" *ngIf="currentStudent.controls['studentFirstName'].invalid && currentStudent.controls['studentFirstName'].touched || 
+                    currentStudent.controls['studentLastName'].invalid && currentStudent.controls['studentLastName'].touched">
                         Enter a value for this field.
                     </div>
                 </div>
@@ -33,14 +34,20 @@
                     <span>Phone Number</span>
                     <em class="required-star">*</em>
                   </label>
-                    <input type="text">
+                    <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
+                    <div class="warning" *ngIf="currentStudent.controls['studentPhone'].invalid && currentStudent.controls['studentPhone'].touched">
+                        Enter a number for this field like this (+380) 63-889-11-89.
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label class="label">
                   <span>Email Address</span>
                 </label>
-                    <input type="text">
+                    <input type="email" class="form-control" name="email" formControlName="studentEmail">
+                    <div class="warning" *ngIf="currentStudent.controls['studentEmail'].invalid && currentStudent.controls['studentEmail'].touched">
+                        Enter a valid email address. (eg: yourname@domain.com)
+                    </div>
                 </div>
 
                 <div class="form-group">

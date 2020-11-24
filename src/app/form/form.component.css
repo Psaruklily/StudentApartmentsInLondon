@@ -79,9 +79,10 @@ input.ng-touched:focus.ng-invalid:focus {
     border: 1px solid rgba(223, 0, 0, 0.75);
 }
 
-input.ng-touched.ng-valid {
+
+/* input.ng-touched.ng-valid {
     border: solid rgb(0, 128, 0) 1px;
-}
+} */
 
 .clearfix {
     clear: both;
@@ -110,7 +111,7 @@ span.last-name {
     color: #888888;
     font: 14px 'Open Sans, Arial, Arimo, Helvetica, sans-serif';
     padding-top: 3px;
-    margin: 0 0 8px;
+    margin: 0px;
 }
 
 .first-name {
@@ -148,4 +149,5 @@ input[type=submit] {
     display: block;
     color: #FF0000;
     font: 14px 'Arial, Arimo, Helvetica, sans-serif';
+    padding-top: 5px;
 }
