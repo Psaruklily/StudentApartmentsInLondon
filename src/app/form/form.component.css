@@ -29,7 +29,7 @@
 
 .content-form {
     width: 800px;
-    height: 702px;
+    min-height: 600px;
     margin: auto;
 }
 
@@ -79,11 +79,6 @@ input.ng-touched:focus.ng-invalid:focus {
     border: 1px solid rgba(223, 0, 0, 0.75);
 }
 
-
-/* input.ng-touched.ng-valid {
-    border: solid rgb(0, 128, 0) 1px;
-} */
-
 .clearfix {
     clear: both;
 }
@@ -129,10 +124,25 @@ textarea {
 }
 
 .btn-submit {
-    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input[type=submit] {
+.warning {
+    display: block;
+    color: #FF0000;
+    font: 14px 'Arial, Arimo, Helvetica, sans-serif';
+    padding-top: 5px;
+}
+
+
+/*styles for submit button depending on the validity or invalidity of the form */
+
+.validForm {
     width: 75px;
     height: 30px;
     color: #fff;
@@ -145,9 +155,28 @@ input[type=submit] {
     text-align: center;
 }
 
-.warning {
-    display: block;
-    color: #FF0000;
-    font: 14px 'Arial, Arimo, Helvetica, sans-serif';
-    padding-top: 5px;
+.invalidForm {
+    width: 75px;
+    height: 30px;
+    color: #696969;
+    background: #dddddd;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font: 15px 'Open Sans, Lucida Grande, Lucida Sans Unicode,Arial, Arimo, Helvetica,sans-serif';
+    font-weight: 800;
+    text-align: center;
+}
+
+.spacesBelowForm {
+    color: #C0C0C0;
+}
+
+.noticeForUser {
+    padding: 15px;
+    text-align: center;
+}
+
+.noticeForUser img {
+    height: 25px;
 }

@@ -64,10 +64,18 @@
                     <textarea></textarea>
                 </div>
 
-                <div class="form-group btn-submit">
-                    <input type="submit" value="Submit">
+                <div class="btn-submit">
+                    <input type="submit" value="Submit" [disabled]="currentStudent.invalid" [ngClass]="{'invalidForm': isInvalidForm}" *ngIf="currentStudent.invalid; else unset">
+                    <ng-template #unset>
+                        <input type="submit" value="Submit" [ngClass]="{'validForm': isValidForm}">
+                    </ng-template>
                 </div>
             </form>
+            <p class="spacesBelowForm">-----------------------------------------------------------------------------------------------------------------------------</p>
+            <div class="noticeForUser">
+                <p>Do not submit confidential information such as credit card details and account passwords. <a href="#">Report Abuse</a> </p>
+                <img src="https://static.zohocdn.com/forms/images/formFooterLogo.2412082a3023abbd1034978af8496f81.png" alt="">
+            </div>
         </div>
     </div>
 </div>
