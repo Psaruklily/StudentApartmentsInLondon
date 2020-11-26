@@ -54,6 +54,8 @@
 
 input {
     border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 5px;
     height: 30px;
     width: 100%;
 }
@@ -97,8 +99,7 @@ span.last-name {
 
 .last-name input,
 .first-name input {
-    border-radius: 4px;
-    padding: 5px;
+    /* padding: 5px; */
     width: calc(100% - 5px);
 }
 
@@ -179,4 +180,18 @@ textarea {
 
 .noticeForUser img {
     height: 25px;
+}
+
+
+/*test*/
+
+span.phone-mask {
+    float: left;
+    display: inline-block;
+    width: 10%;
+}
+
+span.phone-number {
+    display: inline-block;
+    width: 90%;
 }

@@ -28,18 +28,28 @@
                         Enter a value for this field.
                     </div>
                 </div>
-
+                <!--tel-->
                 <div class="form-group">
                     <label class="label">
                     <span>Phone Number</span>
                     <em class="required-star">*</em>
                   </label>
-                    <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
+
+                    <div class="content-phone">
+                        <span class="phone-mask">
+                  <input type="text" class="form-control" name="first-name" formControlName="studentFirstName">
+                </span>
+                        <span class="phone-number">
+                        <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
+                </span>
+                    </div>
+                    <div class="clearfix"></div>
+
                     <div class="warning" *ngIf="currentStudent.controls['studentPhone'].invalid && currentStudent.controls['studentPhone'].touched">
                         Enter a number for this field like this (+380) 63-889-11-89.
                     </div>
                 </div>
-
+                <!--/tel-->
                 <div class="form-group">
                     <label class="label">
                   <span>Email Address</span>
