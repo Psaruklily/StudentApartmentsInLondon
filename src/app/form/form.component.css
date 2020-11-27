@@ -195,3 +195,13 @@ span.phone-number {
     display: inline-block;
     width: 90%;
 }
+
+.numbers {
+    background: red;
+    width: 300px;
+    height: 300px;
+}
+
+.showHide {
+    display: none;
+}

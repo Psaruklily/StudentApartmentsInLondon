@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-/* import { FormGroup } from '@angular/forms'; */
 
 @Component({
   selector: 'app-form',
@@ -13,6 +12,7 @@ export class FormComponent implements OnInit {
 currentStudent: FormGroup;
 isInvalidForm = true;
 isValidForm = true;
+showHidePhone = true;
 
   constructor() { 
     this.currentStudent = new FormGroup({
@@ -35,4 +35,10 @@ isValidForm = true;
   submit(){
     console.log(this.currentStudent);
   }
+
+  showPhones(): void {
+  this.showHidePhone = !this.showHidePhone;
+  console.log('1')
+  }
+
 }

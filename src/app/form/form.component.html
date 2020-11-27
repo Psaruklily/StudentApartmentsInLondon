@@ -37,8 +37,9 @@
 
                     <div class="content-phone">
                         <span class="phone-mask">
-                  <input type="text" class="form-control" name="first-name" formControlName="studentFirstName">
-                </span>
+                          <button type="button" (click)="showPhones()">Defaukt Value</button>
+                          <div class="numbers" [ngClass]="{showHide: showHidePhone}">gfdhgfd</div>
+                        </span>
                         <span class="phone-number">
                         <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
                 </span>
