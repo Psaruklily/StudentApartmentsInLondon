@@ -6,7 +6,7 @@
 
     <div class="wraper-form">
         <div class="content-form">
-            <form [formGroup]="currentStudent" (ngSubmit)="submit()">
+            <form [formGroup]="currentStudent" class="form" (ngSubmit)="submit()">
                 <div class="form-group">
                     <label class="label">
                       <span>Full Name</span>
@@ -38,7 +38,7 @@
                     <div class="content-phone">
                         <span class="phone-mask">
                           <button type="button" (click)="showPhones()">Defaukt Value</button>
-                          <div class="numbers" [ngClass]="{showHide: showHidePhone}">gfdhgfd</div>
+                          <div class="numbers" [ngClass]="{showHide: showHidePhone}"></div>
                         </span>
                         <span class="phone-number">
                         <input type="tel" class="form-control" name="phone" formControlName="studentPhone">

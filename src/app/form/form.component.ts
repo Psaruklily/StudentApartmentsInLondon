@@ -1,5 +1,6 @@
-import { Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ApartmentsService } from '../apartments.service';
 
 @Component({
   selector: 'app-form',
@@ -8,13 +9,14 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
 
-@Input() currentApartment;
-currentStudent: FormGroup;
-isInvalidForm = true;
-isValidForm = true;
-showHidePhone = true;
+  @Input() currentApartment;
+  currentStudent: FormGroup;
+  isInvalidForm = true;
+  isValidForm = true;
+  showHidePhone = true;
+  infoAboutCountries: any;
 
-  constructor() { 
+  constructor(private apartmentsService: ApartmentsService) {
     this.currentStudent = new FormGroup({
       "studentFirstName": new FormControl('Lilya', [
         Validators.required,
@@ -28,17 +30,20 @@ showHidePhone = true;
       "studentEmail": new FormControl(null, Validators.email)
     })
   }
-  
+
   ngOnInit(): void {
+    this.apartmentsService.getFlafAndPhones().subscribe(function (countries) {
+      this.infoAboutCountries = countries;
+      console.log(this.infoAboutCountries);
+    });
   }
 
-  submit(){
+  submit() {
     console.log(this.currentStudent);
   }
 
   showPhones(): void {
-  this.showHidePhone = !this.showHidePhone;
-  console.log('1')
+    this.showHidePhone = !this.showHidePhone;
   }
 
 }
