@@ -37,56 +37,68 @@
 
                     <div class="content-phone">
                         <span class="phone-mask">
-                          <button type="button" (click)="showPhones()">Defaukt Value</button>
-                          <div class="numbers" [ngClass]="{showHide: showHidePhone}"></div>
-                        </span>
-                        <span class="phone-number">
-                        <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
+                          <input type="button" class="btnWithMask" (click)="showPhones()" value="Default Value">
+                          <div class="country-list" [ngClass]="{showHide: showHidePhone}">
+                              <ul>
+                                  <li *ngFor="let country of country$ | async">
+                                      <div class="wraper-country">
+                                          <div class="flag-country">
+                                              <img src="{{country.flag}}" alt="flag">
+                                          </div>
+                                          <span #name class="name-country">{{country.name}}</span>
+                        <span class="callingCodes-country">+{{country.callingCodes}}</span>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
                 </span>
-                    </div>
-                    <div class="clearfix"></div>
+                <span class="phone-number">
+                    <input type="tel" class="form-control" name="phone" formControlName="studentPhone">
+                </span>
+        </div>
+        <div class="clearfix"></div>
 
-                    <div class="warning" *ngIf="currentStudent.controls['studentPhone'].invalid && currentStudent.controls['studentPhone'].touched">
-                        Enter a number for this field like this (+380) 63-889-11-89.
-                    </div>
-                </div>
-                <!--/tel-->
-                <div class="form-group">
-                    <label class="label">
-                  <span>Email Address</span>
-                </label>
-                    <input type="email" class="form-control" name="email" formControlName="studentEmail">
-                    <div class="warning" *ngIf="currentStudent.controls['studentEmail'].invalid && currentStudent.controls['studentEmail'].touched">
-                        Enter a valid email address. (eg: yourname@domain.com)
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="label">
-                <span>University / College of attendance</span>
-              </label>
-                    <input type="text">
-                </div>
-
-                <div class="form-group">
-                    <label class="label">
-              <span>Your Message</span>
-            </label>
-                    <textarea></textarea>
-                </div>
-
-                <div class="btn-submit">
-                    <input type="submit" value="Submit" [disabled]="currentStudent.invalid" [ngClass]="{'invalidForm': isInvalidForm}" *ngIf="currentStudent.invalid; else unset">
-                    <ng-template #unset>
-                        <input type="submit" value="Submit" [ngClass]="{'validForm': isValidForm}">
-                    </ng-template>
-                </div>
-            </form>
-            <p class="spacesBelowForm">-----------------------------------------------------------------------------------------------------------------------------</p>
-            <div class="noticeForUser">
-                <p>Do not submit confidential information such as credit card details and account passwords. <a href="#">Report Abuse</a> </p>
-                <img src="https://static.zohocdn.com/forms/images/formFooterLogo.2412082a3023abbd1034978af8496f81.png" alt="">
-            </div>
+        <div class="warning" *ngIf="currentStudent.controls['studentPhone'].invalid && currentStudent.controls['studentPhone'].touched">
+            Enter a number for this field like this (+380) 63-889-11-89.
         </div>
     </div>
+    <!--/tel-->
+    <div class="form-group">
+        <label class="label">
+                  <span>Email Address</span>
+                </label>
+        <input type="email" class="form-control" name="email" formControlName="studentEmail">
+        <div class="warning" *ngIf="currentStudent.controls['studentEmail'].invalid && currentStudent.controls['studentEmail'].touched">
+            Enter a valid email address. (eg: yourname@domain.com)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="label">
+                <span>University / College of attendance</span>
+              </label>
+        <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label class="label">
+              <span>Your Message</span>
+            </label>
+        <textarea></textarea>
+    </div>
+
+    <div class="btn-submit">
+        <input type="submit" value="Submit" [disabled]="currentStudent.invalid" [ngClass]="{'invalidForm': isInvalidForm}" *ngIf="currentStudent.invalid; else unset">
+        <ng-template #unset>
+            <input type="submit" value="Submit" [ngClass]="{'validForm': isValidForm}">
+        </ng-template>
+    </div>
+    </form>
+    <p class="spacesBelowForm">-----------------------------------------------------------------------------------------------------------------------------</p>
+    <div class="noticeForUser">
+        <p>Do not submit confidential information such as credit card details and account passwords. <a href="#">Report Abuse</a> </p>
+        <img src="https://static.zohocdn.com/forms/images/formFooterLogo.2412082a3023abbd1034978af8496f81.png" alt="">
+    </div>
+</div>
+</div>
 </div>

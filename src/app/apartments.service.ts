@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -166,8 +166,7 @@ export class ApartmentsService {
     return this.apartments.find(apartment => apartment['id'] === id);
   }  
 
-  getFlafAndPhones(): Observable<any>{
+  getFlafAndPhones():Observable<Object>{
     return this.http.get('https://restcountries.eu/rest/v2/all');
   }
-
 }
