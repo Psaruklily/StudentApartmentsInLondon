@@ -17,6 +17,8 @@ export class FormComponent implements OnInit {
   showHidePhone = true;
   infoAboutCountries = [];
   country$;
+  flagCurrentCountry: string;
+  maskCallCode: string;
 
   @ViewChild('name', {static: false})
 nameCountry: ElementRef;
@@ -57,5 +59,10 @@ nativeCountryName: ElementRef;
 
   showPhones(): void {
     this.showHidePhone = !this.showHidePhone;
+  }
+
+  changeCountry(country): void{
+    this.flagCurrentCountry = country.flag;
+    this.maskCallCode = country.callingCodes;
   }
 }

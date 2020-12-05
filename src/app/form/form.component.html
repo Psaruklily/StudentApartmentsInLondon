@@ -37,10 +37,22 @@
 
                     <div class="content-phone">
                         <span class="phone-mask">
-                          <input type="button" class="btnWithMask" (click)="showPhones()" value="Default Value">
+                          <div class="btnWithMask" (click)="showPhones()">
+
+                            <div class="selected-flag">
+                                <img src="{{flagCurrentCountry || 'https://restcountries.eu/data/ukr.svg'}}" alt="flag">
+                            </div>
+
+                            <div class="selected-callingCodes">
+                                +{{maskCallCode || '380'}}
+                            </div>
+
+                            <div class="dropdown-arrow"></div>
+
+                          </div>
                           <div class="country-list" [ngClass]="{showHide: showHidePhone}">
                               <ul>
-                                  <li *ngFor="let country of country$ | async">
+                                  <li *ngFor="let country of country$ | async" (click)="changeCountry(country)">
                                       <div class="wraper-country">
                                           <div class="flag-country">
                                               <img src="{{country.flag}}" alt="flag">
