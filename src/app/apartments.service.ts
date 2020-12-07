@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +11,7 @@ export class ApartmentsService {
   private messageSource = new BehaviorSubject<string>('default message');
   public currentMessage = this.messageSource.asObservable();
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   changeMessage(message: string) {
     this.messageSource.next(message)
@@ -164,4 +166,7 @@ export class ApartmentsService {
     return this.apartments.find(apartment => apartment['id'] === id);
   }  
 
+  getFlafAndPhones():Observable<Object>{
+    return this.http.get('https://restcountries.eu/rest/v2/all');
+  }
 }

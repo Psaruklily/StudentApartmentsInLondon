@@ -15,6 +15,9 @@ import { BtnViewComponent } from './btn-view/btn-view.component';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { CurrentApartmentComponent } from './current-apartment/current-apartment.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { CarouselComponent } from './carousel/carousel.component';
     BtnViewComponent,
     ApartmentComponent,
     CurrentApartmentComponent,
-    CarouselComponent
+    CarouselComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
