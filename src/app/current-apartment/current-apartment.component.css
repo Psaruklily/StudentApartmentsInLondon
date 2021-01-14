@@ -157,3 +157,32 @@
     font-weight: 800;
     margin-right: 17px;
 }
+
+
+/*Styles for block with video*/
+
+
+/* .div-for-video {
+    position: relative;
+} */
+
+.apartment-tour {
+    text-align: center;
+}
+
+.apartment-tour-title {
+    font: 43px 'orpheus-pro';
+    margin: 0px 0px 28px;
+}
+
+.apartment-tour-notice {
+    font: 18px 'adobe-garamond-pro';
+    margin: 14px 0px 0px;
+}
+
+.videoAboutFlat {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
