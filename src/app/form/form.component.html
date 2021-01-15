@@ -37,7 +37,7 @@
 
                     <div class="content-phone">
                         <span class="phone-mask">
-                          <div class="btnWithMask" (click)="showPhones()">
+                          <div class="btnWithMask" (click)="showPhones()" (clickOutside)="showHidePhone = true">
 
                             <div class="selected-flag">
                                 <img src="{{flagCurrentCountry || 'https://restcountries.eu/data/ukr.svg'}}" alt="flag">
