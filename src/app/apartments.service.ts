@@ -38,7 +38,7 @@ export class ApartmentsService {
       bedroomX2: "Designed for a perfect night's sleep, both bedrooms have double-beds that come with sheets, duvets, pillows. Enjoy 5 star hotel-standard cleanliness, weekly cleans, toiletries, fresh linen. There is also wardrobe space and a standing mirror in both.",
       bathroomX2: "The modern bathrooms come with a sink, shower, toilet, heated towel rail, and multiple mirrors.",
       outdoorTerrace: "Winding stairs in the hall lead up to 33.5 square metre room terrace, with outdoor furniture including tables and chairs.",
-      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away."
+      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away.",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ export class ApartmentsService {
       bedroomX2: "Designed for a perfect night's sleep, both double-beds come with sheets, duvets, pillows, etc. Guests can enjoy 5 star hotel-standard cleanliness, weekly cleans, toiletries, fresh linen. There is also plenty of wardrobe space and a couple of standing mirrors.",
       bathroomX2: "The modern bathroom comes with a sink, shower, toilet, heated towel rail, and multiple mirrors.",
       outdoorTerrace: "Winding stairs in the hall lead up to 33.5 square metre room terrace, with outdoor furniture including tables and chairs.",
-      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away."
+      totalPeaceOfMind: "With our 24 hour assistance and centrally located reception, students can concentrate on their studies with no distractions. Should any issues rise, our friendly staff are just a short walk, phone call, Whatsapp or email away.",
 },
 {
   id: 3,
